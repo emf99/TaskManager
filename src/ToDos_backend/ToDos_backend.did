@@ -1,0 +1,7 @@
+service : {
+  "add_task": (text) -> (text) ;
+  "list_tasks": () -> (vec record { id : nat32; description : text; done : bool }) query;
+  "mark_task_done": (nat32) -> (text) ;
+  "delete_task": (nat32) -> (text) ;
+  
+}
